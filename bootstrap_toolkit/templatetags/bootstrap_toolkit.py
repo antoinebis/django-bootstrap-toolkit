@@ -27,6 +27,10 @@ BOOTSTRAP_CSS_URL = getattr(settings, 'BOOTSTRAP_CSS_URL',
     BOOTSTRAP_CSS_BASE_URL + 'bootstrap.css'
 )
 
+BOOTSTRAP_CSS_RESPONSIVE_URL = getattr(settings, 'BOOTSTRAP_CSS_URL',
+    BOOTSTRAP_CSS_BASE_URL + 'bootstrap-responsive.css'
+)
+
 register = template.Library()
 
 @register.simple_tag
